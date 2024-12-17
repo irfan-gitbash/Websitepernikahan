@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Website Undangan pernikahan</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <style>
+    /* Styling tambahan agar tampilan lebih menarik */
+    .step-card {
+      text-align: center; /* Gambar dan teks rata tengah */
+      margin-bottom: 30px;
+    }
+    .step-card img {
+      width: 200px; /* Ukuran gambar */
+      margin-bottom: 10px; /* Jarak antara gambar dan teks */
+    }
+    .step-card p {
+      font-weight: bold;
+      color: #333;
+      font-size: 16px;
+    }
+    .slider-height {
+        min-height: 60vh;
+      }
+      
+      @media (max-width: 768px) {
+        .slider-height {
+          min-height: 50vh; /* Lebih kecil di layar mobile */
+        }
+        .circle-caption {
+          width: 70%; /* Lebih kecil untuk lingkaran di mobile */
+          padding: 1.5rem; /* Padding lebih kecil */
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .slider-height {
+          min-height: 40vh; /* Tinggi lebih kecil */
+        }
+        .circle-caption {
+          width: 80%; /* Lingkaran lebih besar di layar kecil */
+          font-size: 0.9rem; /* Ukuran font kecil */
+        }
+      }
+
+      btn-responsive {
+        font-size: 11px; /* Ukuran font normal */
+        padding: 0.5rem 1rem; /* Padding default */
+        right:10px;
+      }
+    
+      /* Ukuran lebih kecil di layar <= 576px (mobile kecil) */
+      @media (max-width: 576px) {
+        .btn-responsive {
+            font-size:11px;
+            text-align:center;
+            align-items:center;
+          width: auto; /* Lebar tombol 80% layar */
+          height:31%;
+          right:10px;
+        }
+      }
+    
+      /* Ukuran lebih besar di layar >= 768px (mobile besar) */
+      @media (min-width: 768px) {
+        .btn-responsive {
+            font-size:11px;
+            text-align:center;
+            align-items:center;
+          width: auto; /* Lebar tombol sesuai konten */
+          height:31%;
+          right:10px;
+        }
+      }
+  </style>
+  <body>
+    <!-- Preloader Start -->
+    <!-- Preloader Start -->
+
+    <header>
+      <!-- Header Start -->
+      <div class="header-area" style="background-color: #faebd7">
+        <div class="main-header header-sticky">
+          <div class="container">
+            <div class="row align-items-center">
+              <!-- Logo -->
+              <div class="col-xl-2 col-lg-2 col-md-2">
+                <div class="logo">
+                    <h3>
+                        <a href="http://127.0.0.1:5501/index.html">
+                          Mydays
+                        </a>
+                </div>
+              </div>
+              <div class="col-xl-10 col-lg-10 col-md-10">
+                <!-- Main-menu -->
+                <div class="main-menu f-right d-none d-lg-block">
+                  <nav>
+                    <ul id="navigation">
+                      <li><a href="our_story.html"> Our Story</a></li>
+                      <li><a href="location.html">Produk</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="booking.html">Guest Book</a></li>
+                      <li><a href="contact.html">contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- Mobile Menu -->
+              <div class="col-12">
+                <div class="mobile_menu d-block d-lg-none"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+    </header>
+
+    <main>
+      <!-- Slider Area Start-->
+      <div class="slider-area-header">
+        <div class="slider-active-header">
+          <div
+            class="single-slider-slide slider-height d-flex align-items-center"
+            style="background: url('assets/img/product/bg-hero.jpg') center/cover no-repeat"
+          >
+            <div class="container">
+              <div class="row justify-content-center align-items-center">
+                <!-- Responsif dengan Bootstrap Grid -->
+                <div class="col-12 col-md-10 col-lg-7">
+                  <div class="hero__caption text-center p-4 rounded shadow">
+                    <div class="circle-caption mx-auto">
+                      <h5 class="text-black mb-3" style="color:#000000">
+                        Tentukan Undangan Digital yang cocok dengan kebutuhanmu!
+                      </h5>
+                      <p class="text-black">Katalog Design</p>
+                      <!-- Tombol responsif -->
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=%2B6282118251277&text&type=phone_number&app_absent=0"
+                        class="btn btn-light btn-responsive mt-3"
+                      >
+                        Booking Sekarang
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider Area End-->
+      <!-- Our Story Start -->
+      <!-- Our Story Ende -->
+      <!-- Services Area Start-->
+      <div class="service-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="singl-services text-center mb-60">
+                <div class="card">
+                  <img
+                    src="assets/img/product/hijau1.jpg"
+                    class="card-img-top"
+                    alt="Card Image"
+                    style="height: auto; width: 100%; object-fit: cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="singl-services text-center mb-60">
+                <div class="card">
+                  <img
+                    src="assets/img/product/ungu1.png"
+                    class="card-img-top"
+                    alt="Card Image"
+                    style="height: auto; width: 100%; object-fit: cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="singl-services text-center mb-60">
+                <div class="card">
+                  <img
+                    src="assets/img/product/biru1.png"
+                    class="card-img-top"
+                    alt="Card Image"
+                    style="height: auto; width: 100%; object-fit: cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="singl-services text-center mb-60">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    class="embed-responsive-item"
+                    src="/assets/video/video-1.mp4"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Coklat Bunga</h5>
+                  <p class="card-text">
+                    Hadirkan kesan hangat dan penuh cinta pada momen istimewa
+                    Anda dengan template undangan digital bertema bunga coklat
+                    muda.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="singl-services text-center mb-60">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    class="embed-responsive-item"
+                    src="/assets/video/video2.mp4"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Hijau Botol</h5>
+                  <p class="card-text">
+                    Sambut hari spesial Anda dengan template undangan digital
+                    bertema bunga hijau botol yang memancarkan keindahan alam
+                    dan ketenangan.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="singl-services text-center mb-60">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    class="embed-responsive-item"
+                    src="/assets/video/video3.mp4"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Biru Muda</h5>
+                  <p class="card-text">
+                    Warna biru muda yang lembut memberikan kesan tenang, penuh
+                    harapan, dan kedamaian, sempurna untuk setiap perayaan yang
+                    berarti.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Area End-->
+      <!-- our Memories start -->
+      <div class="our-memories-area section-padding2">
+        <div class="container">
+          <!-- section tittle -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-tittle text-center">
+                <img
+                  src="assets/img/memories/section_tittle_flowre.png"
+                  alt=""
+                />
+                <h2>OUR MEMORIES</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-4 col-md-4">
+              <div class="memory">
+                <div class="memories-img">
+                  <img src="assets/img/product/ungu4.png" />
+                  <div
+                    class="menorie-icon"
+                    href="assets/img/memories/memories1.jpg"
+                  >
+                    <i class="ti-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="memory">
+                <div class="memories-img">
+                  <img src="assets/img/product/ungu3.png" alt="" />
+                  <div
+                    class="menorie-icon"
+                    href="assets/img/memories/memories2.jpg"
+                  >
+                    <i class="ti-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="memory">
+                <div class="memories-img">
+                  <img src="assets/img/product/hijau3.jpg" alt="" />
+                  <div
+                    class="menorie-icon"
+                    href="assets/img/memories/memories3.jpg"
+                  >
+                    <i class="ti-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="memory">
+                <div class="memories-img">
+                  <img src="assets/img/product/templatebiru.hal4.png" alt="" />
+                  <div
+                    class="menorie-icon"
+                    href="assets/img/memories/memories4.jpg"
+                  >
+                    <i class="ti-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="memory">
+                <div class="memories-img">
+                  <img src="assets/img/product/ungu4.png" alt="" />
+                  <div
+                    class="menorie-icon"
+                    href="assets/img/memories/memories5.jpg"
+                  >
+                    <i class="ti-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="memory">
+                <div class="memories-img">
+                  <img src="assets/img/product/ungu3.png" alt="" />
+                  <div
+                    class="menorie-icon"
+                    href="assets/img/memories/memories2.jpg"
+                  >
+                    <i class="ti-plus"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Shape Img -->
+        <div class="memories-shape d-none d-xl-block">
+          <img
+            src="assets/img/memories/left-img.png"
+            class="memories-shape1"
+            alt=""
+          />
+          <img
+            src="assets/img/memories/right-img.png"
+            class="memories-shape2"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- our Memories End-->
+      <!-- Gift Start -->
+      <div class="brand-area section-padding2">
+        <div class="container">
+          <!-- section tittle -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-tittle text-center">
+                <img
+                  src="assets/img/memories/section_tittle_flowre.png"
+                  alt=""
+                />
+                <h2>Cara Pemesanan</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <!-- Pilih Templates -->
+            <div class="col-md-3 col-sm-6 step-card">
+              <img src="assets/img/product/pilih.png" alt="Pilih Templates" />
+              <p>Pilih Templates</p>
+            </div>
+    
+            <!-- Konfirmasi Admin -->
+            <div class="col-md-3 col-sm-6 step-card">
+              <img src="assets/img/product/confirm.png" alt="Konfirmasi Admin" />
+              <p>Konfirmasi Admin</p>
+            </div>
+    
+            <!-- Menyesuaikan Data User -->
+            <div class="col-md-3 col-sm-6 step-card">
+              <img src="assets/img/product/confirm-data.png" alt="Menyesuaikan Data User" />
+              <p>Menyesuaikan Data User</p>
+            </div>
+    
+            <!-- Transaksi -->
+            <div class="col-md-3 col-sm-6 step-card">
+              <img src="assets/img/product/deal.png" alt="Transaksi" />
+              <p>Transaksi</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- Gift End -->
+
+      <!-- Contact form Start -->
+      <div class="container py-5" style="max-width: 1140px">
+        <div
+          class="row justify-content-center align-items-center"
+          style="text-align: left"
+        >
+          <!-- Kolom Video -->
+          <div class="col-lg-5 col-md-6 col-12 mb-4 mb-md-0">
+            <div class="ratio ratio-16x9">
+              <video width="100%" height="100%" controls>
+                <source src="/assets/video/video-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <!-- Kolom Konten -->
+          <div class="col-lg-6 col-md-6 col-12">
+            <h4 class="fw-bold mb-3">
+              Template Undangan Digital Cantik Berwarna Coklat Muda dengan Corak
+              Bunga
+            </h4>
+            <p>
+              Hadirkan kesan hangat dan penuh cinta pada momen istimewa Anda
+              dengan template undangan digital bertema bunga coklat muda.
+              Perpaduan desain minimalis dengan nuansa bunga lembut memberikan
+              sentuhan klasik yang memikat hati.
+            </p>
+            <p>
+              Biarkan undangan Anda menjadi representasi keindahan dan
+              keistimewaan hari bahagia Anda dengan desain yang tidak hanya
+              indah tetapi juga bermakna.
+            </p>
+            <h5 class="fw-bold mt-4">Fitur Produk :</h5>
+            <ul>
+              <li>Request Music</li>
+              <li>Foto-foto Album</li>
+              <li>Navigasi Lokasi</li>
+              <li>Kolom Ucapan</li>
+              <li>Hitung Mundur</li>
+              <li>Fitur RSVP</li>
+              <li>Fitur nama tamu undangan</li>
+            </ul>
+            <h5 class="fw-bold mt-4">Tambahan Layanan :</h5>
+            <ul>
+              <li>Bebas revisi sampai hari</li>
+              <li>Proses pembuatan 1 hari kerja</li>
+            </ul>
+            <h5 class="fw-bold mt-4">Order & Konsultasi :</h5>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B6282118251277&text&type=phone_number&app_absent=0"
+              target="_blank"
+              class="btn btn-success d-inline-flex align-items-center"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+                alt="WhatsApp"
+                width="20"
+                height="20"
+                class="me-2"
+              />
+              Klik Untuk Order
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5" style="max-width: 1140px">
+        <div
+          class="row justify-content-center align-items-center"
+          style="text-align: left"
+        >
+          <!-- Kolom Video -->
+          <div class="col-lg-5 col-md-6 col-12 mb-4 mb-md-0">
+            <div class="ratio ratio-16x9">
+              <video width="100%" height="100%" controls>
+                <source src="/assets/video/video2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <!-- Kolom Konten -->
+          <div class="col-lg-6 col-md-6 col-12">
+            <h4 class="fw-bold mb-3">
+              Template Undangan Digital Cantik Berwarna hijau botol dengan Corak
+              Bunga
+            </h4>
+            <p>
+              Sambut Hari spesial anda dengan template undangan digital bertema
+              bunga hijau botol yang memancarkan keindahan alam dan
+              ketenangan.Desain elegan dengan warna hijau botol yang kaya
+              memberikan kesan yang segar dan alami, sempurna untuk acara penuh
+              makna
+            </p>
+            <h5 class="fw-bold mt-4">Fitur Produk :</h5>
+            <ul>
+              <li>Request Music</li>
+              <li>Foto-foto Album</li>
+              <li>Navigasi Lokasi</li>
+              <li>Kolom Ucapan</li>
+              <li>Hitung Mundur</li>
+              <li>Fitur RSVP</li>
+              <li>Fitur nama tamu undangan</li>
+            </ul>
+            <h5 class="fw-bold mt-4">Tambahan Layanan :</h5>
+            <ul>
+              <li>Bebas revisi sampai hari</li>
+              <li>Proses pembuatan 1 hari kerja</li>
+            </ul>
+            <h5 class="fw-bold mt-4">Order & Konsultasi :</h5>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B6282118251277&text&type=phone_number&app_absent=0"
+              target="_blank"
+              class="btn btn-success d-inline-flex align-items-center"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+                alt="WhatsApp"
+                width="20"
+                height="20"
+                class="me-2"
+              />
+              Klik Untuk Order
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5" style="max-width: 1140px">
+        <div
+          class="row justify-content-center align-items-center"
+          style="text-align: left"
+        >
+          <!-- Kolom Video -->
+          <div class="col-lg-5 col-md-6 col-12 mb-4 mb-md-0">
+            <div class="ratio ratio-16x9">
+              <video width="100%" height="100%" controls>
+                <source src="/assets/video/video3.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <!-- Kolom Konten -->
+          <div class="col-lg-6 col-md-6 col-12">
+            <h4 class="fw-bold mb-3">
+              Template Undangan Digital Cantik Berwarna Biru Muda dengan Corak
+              Bunga
+            </h4>
+            <p>
+              Rayakan momen spesial Anda dengan template undangan digital
+              bertema bunga biru muda yang elegan dan menenangkan. Biarkan
+              undangan Anda menyebarkan kedamaian dan keindahan melalui desain
+              yang menyegarkan dan menawan. Dengan sentuhan bunga biru muda yang
+              elegan, momen istimewa Anda akan dikenang dengan penuh cinta.
+            </p>
+            <h5 class="fw-bold mt-4">Fitur Produk :</h5>
+            <ul>
+              <li>Request Music</li>
+              <li>Foto-foto Album</li>
+              <li>Navigasi Lokasi</li>
+              <li>Kolom Ucapan</li>
+              <li>Hitung Mundur</li>
+              <li>Fitur RSVP</li>
+              <li>Fitur nama tamu undangan</li>
+            </ul>
+            <h5 class="fw-bold mt-4">Tambahan Layanan :</h5>
+            <ul>
+              <li>Bebas revisi sampai hari</li>
+              <li>Proses pembuatan 1 hari kerja</li>
+            </ul>
+            <h5 class="fw-bold mt-4">Order & Konsultasi :</h5>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B6282118251277&text&type=phone_number&app_absent=0"
+              target="_blank"
+              class="btn btn-success d-inline-flex align-items-center"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+                alt="WhatsApp"
+                width="20"
+                height="20"
+                class="me-2"
+              />
+              Klik Untuk Order
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form End -->
+
+      <div class="brand-area section-padding2">
+        <div class="container">
+          <!-- section tittle -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-tittle text-center">
+                <img
+                  src="assets/img/memories/section_tittle_flowre.png"
+                  alt=""
+                />
+                <h2>OUR LOVELY PARTNERS</h2>
+              </div>
+            </div>
+          </div>
+          <div class="brand-active brand-border">
+            <div class="single-brand">
+              <img src="assets/img/service/brand1.jpg" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/service/brand2.jpg" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/service/brand3.jpg" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/service/brand4.jpg" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/service/brand5.jpg" alt="" />
+            </div>
+            <div class="single-brand">
+              <img src="assets/img/service/brand3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Footer Start-->
+      <div class="footer-main footer-bg">
+        <div class="footer-area footer-padding">
+          <div class="container">
+            <div class="row d-flex justify-content-between">
+              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-8">
+                <div class="single-footer-caption mb-50">
+                  <div class="single-footer-caption mb-30">
+                    <!-- logo -->
+                    <div class="footer-logo">
+                      <a href="index.html"
+                        ><img src="assets/img/logo/logo2_footer.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="footer-tittle">
+                      <div class="footer-pera">
+                        <p class="info1">
+                          Seddo eiusmod tempor incididunt ut labore et dolore
+                          magna aliqua.
+                        </p>
+
+                        <p class="info2">theaisle@elated-themes.com</p>
+                        <p class="info2">+(123) 456 - 7890 - 456 - 7890</p>
+                        <p class="info2">35 W 46nd Street New York</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-5 col-sm-7">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>WEDDING PLANNER FAQS</h4>
+                    <ul>
+                      <li><a href="#">Why Hire a Planner?</a></li>
+                      <li><a href="#">How Can I Make An</a></li>
+                      <li><a href="#">Appointment?</a></li>
+                      <li><a href="#">How to Choose a Venue</a></li>
+                      <li><a href="#">Event Catalogue</a></li>
+                      <li><a href="#"> Accept</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-5 col-sm-7">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>ABOUT US</h4>
+                    <ul>
+                      <li><a href="#">Bridesmaids</a></li>
+                      <li><a href="#">November 22, 2020</a></li>
+                      <li><a href="#">Groomsmen</a></li>
+                      <li><a href="#">November 22, 2020</a></li>
+                      <li><a href="#">JEWELRY</a></li>
+                      <li><a href="#">November 22, 2020</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Instagram</h4>
+                  </div>
+                  <div class="instagram-gellay">
+                    <ul class="insta-feed">
+                      <li>
+                        <a href="#"
+                          ><img src="assets/img/post/instra1.jpg" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/img/post/instra2.jpg" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/img/post/instra3.jpg" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/img/post/instra4.jpg" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/img/post/instra5.jpg" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="assets/img/post/instra6.jpg" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer-bottom aera -->
+        <div class="footer-bottom-area footer-bg">
+          <div class="container">
+            <div class="footer-border">
+              <div class="row d-flex align-items-center">
+                <div class="col-xl-12">
+                  <div class="footer-copy-right text-center">
+                    <p>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      Copyright &copy;
+                      <script>
+                        document.write(new Date().getFullYear());
+                      </script>
+                      All rights reserved | This Website Wedding
+                      <i class="ti-heart" aria-hidden="true"></i> by
+                      <a href="https://colorlib.com" target="_blank"
+                        >Website Wedding</a
+                      >
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End-->
+    </footer>
+
+    <!-- JS here -->
+
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./assets/js/jquery.scrollUp.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
